@@ -30,6 +30,13 @@
     
     ----------------------------------------------------------------------------- */
 
+    @media screen and (min-width: 0px) and (max-width: 480px) {
+        .project img { width: 100%;}
+    }
+    @media screen and (min-width: 481px) {
+        .project img { width: 480px;}
+    }
+
     @media screen and (min-width: 0px) and (max-width: 779px) {
         
         .row {
@@ -55,7 +62,6 @@
 
         .pad { display: none;}
 
-        .project img { width: 190px;}
 
         .social,
         .span_1 {
