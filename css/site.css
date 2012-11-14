@@ -21,7 +21,7 @@ h2 { font-size: 26px; }
 .project { line-height: 135%; }
 .project h3 { margin: 10px 0 10px 0; }
 .project a { text-decoration: none; color: white;}
-.project .sub { margin: 10px 0 0 0; text-align: justify; }
+.project .sub { margin: 10px 0 0 0; }
 
 .things ul { display: inline-block;}
 .things li { font-weight: bold; line-height: 155%; }
