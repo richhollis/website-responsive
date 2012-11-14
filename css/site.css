@@ -1,4 +1,4 @@
-body { background-image: url('/img/Background_Pattern.png')}
+body { background-image: url('img/Background_Pattern.png')}
 h1, h2, h3, h4, div, p, input { font-family: "museo-slab"; color: #ccf2f8;}
 h1, h2, h3, h4 { color: white;}
 h2 { font-size: 26px; }
@@ -32,4 +32,4 @@ h2 { font-size: 26px; }
 .contact-form INPUT { border: 0; border-bottom: 1px solid silver; width: 80%; color: #222;}
 .contact-form INPUT:focus { outline: none; }
 
-.divider { background-image: url('/img/divider.png'); height: 3px; margin:20px 0 20px 0; }
+.divider { background-image: url('img/divider.png'); height: 3px; margin:20px 0 20px 0; }
