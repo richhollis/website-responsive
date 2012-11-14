@@ -18,13 +18,13 @@ h2 { font-size: 26px; }
 
 .inline { display: inline; margin: 0; padding: 0;}
 
-.project { line-height: 120%; }
+.project { line-height: 135%; }
 .project h3 { margin: 10px 0 10px 0; }
 .project a { text-decoration: none; color: white;}
-.project .sub { margin: 10px 0 0 0; }
+.project .sub { margin: 10px 0 0 0; text-align: justify; }
 
 .things ul { display: inline-block;}
-.things li { font-weight: bold; }
+.things li { font-weight: bold; line-height: 155%; }
 
 .contact-row { background-color: white;}
 .contact-row h2 { color: #222;}
