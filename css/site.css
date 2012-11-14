@@ -1,0 +1,35 @@
+body { background-image: url('/img/Background_Pattern.png')}
+h1, h2, h3, h4, div, p, input { font-family: "museo-slab"; color: #ccf2f8;}
+h1, h2, h3, h4 { color: white;}
+h2 { font-size: 26px; }
+
+.title-block h2 { font-weight: 300; }
+.title-block { display: inline-block; }
+.title, .social { margin-top: 50px; }
+.title-block h1 { float: left; margin: 0; padding: 0; line-height: 115%;}
+.title-block h2 { float: left; margin: 0; padding: 0; }
+.title-block { margin-top: 10px;}
+
+.brand { margin-right: 10px; border: 2px solid #181b1c;}
+
+.bio { margin-top: 10px; font-size: 20px; line-height: 115%; font-weight: 300;}
+
+.social { text-align: right; }
+
+.inline { display: inline; margin: 0; padding: 0;}
+
+.project { line-height: 120%; }
+.project h3 { margin: 10px 0 10px 0; }
+.project a { text-decoration: none; color: white;}
+.project .sub { margin: 10px 0 0 0; }
+
+.things ul { display: inline-block;}
+.things li { font-weight: bold; }
+
+.contact-row { background-color: white;}
+.contact-row h2 { color: #222;}
+.contact-form { width: 100%; margin-bottom: 30px;}
+.contact-form INPUT { border: 0; border-bottom: 1px solid silver; width: 80%; color: #222;}
+.contact-form INPUT:focus { outline: none; }
+
+.divider { background-image: url('/img/divider.png'); height: 3px; margin:20px 0 20px 0; }

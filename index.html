@@ -1,0 +1,105 @@
+---
+layout: default
+
+title: Rich Hollis
+subtitle: Freelance full-stack developer, hacker, Dad
+
+bio: "The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators."
+
+skills: [ 
+  ['HTML / CSS', 'Javascript / jQuery', 'SASS / LESS', 'Responsive', 'Analytics / SEO'],
+  ['Ruby on Rails', 'Java / Android', 'C# / WPF / ASP.NET / ASP', 'LAMP / WAMP / PHP', 'TDD' ],
+  ['MySQL / MS SQL', 'Shell Scripting', 'Browser Extensions', 'Raspberry Pi / Arduino', 'Windows / Linux']
+]
+
+twitter-url: https://twitter.com/richhollis
+linkedin-url: http://uk.linkedin.com/in/richhollis2
+---
+
+<div class="row clearfix">
+  <div class="col pad">&nbsp;</div>
+  <div class="col title">
+    <img class="brand" src="http://0.gravatar.com/avatar/b5874ab143e4ae54d964a933116417a6" />
+    <div class="title-block">
+      <h1>{{ page.title }}</h1><br />
+      <h2>{{ page.subtitle }}</h2>
+    </div>
+  </div>
+  <div class="col social">
+    <a href="{{ page.twitter-url }}"><img src="/img/Twitter.png"></a>
+    <a href="{{ page.linkedin-url }}"><img src="/img/LinkedIn.png"></a>
+  </div>
+</div>
+
+<div class="row clearfix">
+  <div class="col pad">&nbsp;</div>
+  <div class="col full-pad bio">
+    {{ page.bio }}
+    <div class="divider">&nbsp;</div>
+  </div>
+</div>
+
+<div class="row clearfix">
+  <div class="col pad">&nbsp;</div>
+  <h2 class="col full-pad inline">Personal Projects</h2>
+</div>
+
+<div class="row clearfix">
+  <div class="col pad">&nbsp;</div>
+  {% for post in site.posts limit: 3  %}
+  <div class="col project">
+    <h3><a href="{{post.site-url}}">{{ post.url-title }}</a></h3>
+    <a href="{{post.site-url}}"><img src="{{ post.image }}" /></a>
+    <h3 class="sub">{{ post.title }}</h3>
+    <p class="sub">{{ post.desc }}</p>
+  </div>
+  <!-- TODO Separator for full span -->
+  {% endfor %}
+</div>
+
+<div class="row clearfix">
+  <div class="col pad">&nbsp;</div>
+  <div class="col full-pad">
+    <div class="divider">&nbsp;</div>
+  </div>
+</div>
+
+<div class="row clearfix">
+  <div class="col pad">&nbsp;</div>
+  <h2 class="col full-pad inline">Things I Do</h2>
+</div>
+
+<div class="row clearfix">
+  <div class="col pad">&nbsp;</div>
+  <div class="col things">
+    <ul>
+      {% for skill in page.skills[0] %}
+      <li>{{ skill }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="col things">
+    <ul>
+      {% for skill in page.skills[1] %}
+      <li>{{ skill }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="col things">
+    <ul>
+      {% for skill in page.skills[2] %}
+      <li>{{ skill }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<div class="row clearfix contact-row">
+  <div class="col pad">&nbsp;</div>
+  <div class="col contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input placeholder="start typing..." />
+    </form>
+  </div>
+</div>
