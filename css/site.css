@@ -3,6 +3,8 @@ h1, h2, h3, h4, div, p, input { font-family: "museo-slab"; color: #ccf2f8;}
 h1, h2, h3, h4 { color: white;}
 h2 { font-size: 26px; }
 
+a { color: #ccf2f8;}
+
 .title-block h2 { font-weight: 300; }
 .title-block { display: inline-block; }
 .title, .social { margin-top: 50px; }
@@ -28,8 +30,16 @@ h2 { font-size: 26px; }
 
 .contact-row { background-color: white;}
 .contact-row h2 { color: #222;}
-.contact-form { width: 100%; margin-bottom: 30px;}
-.contact-form INPUT { border: 0; border-bottom: 1px solid silver; width: 80%; color: #222;}
+.contact-form { width: 100%; margin-bottom: 30px; }
+.contact-form .underlined { border-bottom: 1px solid silver; }
+.contact-form INPUT[type=text] { border: 0; width: 80%; color: #222; margin-top: 25px;}
 .contact-form INPUT:focus { outline: none; }
-
+.contact-form input[type=submit] {
+  float: right;
+  background : url("../img/paper-plane.png") no-repeat center center;
+  height :52px;
+  width: 42px;
+  border : none;
+  color : transparent;
+}
 .divider { background-image: url('../img/divider.png'); height: 3px; margin:20px 0 20px 0; }

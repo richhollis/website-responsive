@@ -1,6 +1,27 @@
 ---
 layout: default
-title: Home
+
+bio: "<p>
+I'm a <strong>London based, freelance full-stack software engineer</strong> and I love building software products and web applications for people. 
+So, what's a full-stack software engineer? Well, <a href=\"http://www.quora.com/What-does-the-term-full-stack-programmer-mean\">one answer to this question</a> on Quora describes a full-stack engineer as an \"all-singing, all-dancing technical wizard.\" 
+In reality what this actually means is that I can generally work with all of the technical pieces of the puzzle you might need to construct a software product. 
+I can help you design, build, configure, deploy and maintain your software product and/or databases. I work with great UX designers too - like the amazing <a href=\"http://jesseddy.com\">Jess Eddy</a> who designed this site.
+I firmly believe in using industry best practices such as Test Driven Development (TDD).
+</p>
+<p>
+Before going freelance, I spent fifteen years working in technology, primarily in the investment banking and finance sector. I also co-founded an enterprise software business which was a great learning experience.
+</p>
+<p>
+In my spare time, when I'm not building personal software products, I love great food, cooking as much spicy food as possible, the great outdoors, walking and photography. 
+I've recently started teaching kids to code at a regular weekly <a href=\"http://codeclub.org.uk\">Code Club</a> that I run at my local junior school - this is a truly amazing and rewarding experience, teaching the kids new things and computational logic in disguise! Great fun!
+</p>"
+
+skills: [ 
+  ['HTML / CSS', 'Javascript / jQuery', 'SASS / LESS', 'Responsive', 'Analytics / SEO'],
+  ['Ruby on Rails', 'Java / Android', 'C# / WPF / ASP.NET / ASP', 'LAMP / WAMP / PHP', 'TDD' ],
+  ['MySQL / MS SQL', 'Shell Scripting', 'Browser Extensions', 'Raspberry Pi / Arduino', 'Windows / Linux']
+]
+
 ---
 
 <div class="row clearfix">
@@ -13,15 +34,15 @@ title: Home
     </div>
   </div>
   <div class="col social">
-    <a href="{{ site.twitter-url }}"><img src="img/Twitter.png"></a>
-    <a href="{{ site.linkedin-url }}"><img src="img/LinkedIn.png"></a>
+    {% if site.twitter-url %}<a href="{{ site.twitter-url }}"><img src="img/Twitter.png"></a>{% endif %}
+    {% if site.linkedin-url %}<a href="{{ site.linkedin-url }}"><img src="img/LinkedIn.png"></a>{% endif %}
   </div>
 </div>
 
 <div class="row clearfix">
   <div class="col pad">&nbsp;</div>
   <div class="col full-pad bio">
-    {{ site.bio }}
+    {{ page.bio }}
     <div class="divider">&nbsp;</div>
   </div>
 </div>
@@ -85,8 +106,11 @@ title: Home
   <div class="col pad">&nbsp;</div>
   <div class="col contact">
     <h2>Contact Me</h2>
-    <form class="contact-form">
-      <input placeholder="start typing..." />
+    <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dHFCcHZvbmg2bHFMUnV6YXhidzFobXc6MQ&embedded=true&embedded=true&ifq" method="POST" id="ss-form" class="contact-form">
+      <div class="underlined clearfix">
+        <input type="text" name="entry.0.single" value="" id="entry_0" placeholder="start typing...">
+        <input type="submit" name="submit" value="Submit" />
+      </div>
     </form>
   </div>
 </div>

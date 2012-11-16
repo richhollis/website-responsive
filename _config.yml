@@ -1,13 +1,7 @@
 title: Rich Hollis
-description: Freelance full-stack developer, hacker, Dad
+description: Freelance full-stack developer, Hacker & Dad
 
-bio: "The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators."
-
-skills: [ 
-  ['HTML / CSS', 'Javascript / jQuery', 'SASS / LESS', 'Responsive', 'Analytics / SEO'],
-  ['Ruby on Rails', 'Java / Android', 'C# / WPF / ASP.NET / ASP', 'LAMP / WAMP / PHP', 'TDD' ],
-  ['MySQL / MS SQL', 'Shell Scripting', 'Browser Extensions', 'Raspberry Pi / Arduino', 'Windows / Linux']
-]
+meta: I'm a London based, freelance full-stack software engineer and I love creating and building software products, web applications and sites for people.
 
 twitter-url: https://twitter.com/richhollis
 linkedin-url: http://uk.linkedin.com/in/richhollis2
