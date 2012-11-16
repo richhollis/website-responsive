@@ -3,13 +3,15 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Rich Hollis -- Code -- @richhollis
+    Jess Eddy -- Design/UX -- @jesseddy
 
 # THANKS
 
-    <name>
+    Jess Eddy for the design
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
     jQuery, Modernizr
+    Jekyll
