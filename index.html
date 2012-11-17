@@ -27,15 +27,15 @@ skills: [
 <div class="row clearfix">
   <div class="col pad">&nbsp;</div>
   <div class="col title">
-    <img class="brand" src="http://0.gravatar.com/avatar/b5874ab143e4ae54d964a933116417a6" />
+    <img class="brand" src="http://0.gravatar.com/avatar/b5874ab143e4ae54d964a933116417a6" alt="Picture of Rich Hollis" />
     <div class="title-block">
       <h1>{{ site.title }}</h1><br />
       <h2>{{ site.description }}</h2>
     </div>
   </div>
   <div class="col social">
-    {% if site.twitter-url %}<a href="{{ site.twitter-url }}"><img src="img/Twitter.png"></a>{% endif %}
-    {% if site.linkedin-url %}<a href="{{ site.linkedin-url }}"><img src="img/LinkedIn.png"></a>{% endif %}
+    {% if site.twitter-url %}<a href="{{ site.twitter-url }}"><img src="img/Twitter.png" alt="Twitter image link"></a>{% endif %}
+    {% if site.linkedin-url %}<a href="{{ site.linkedin-url }}"><img src="img/LinkedIn.png" alt="Linked In image link"></a>{% endif %}
   </div>
 </div>
 
@@ -57,7 +57,7 @@ skills: [
   {% for post in site.posts limit: 3  %}
   <div class="col project">
     <h3><a href="{{post.site-url}}">{{ post.url-title }}</a></h3>
-    <a href="{{post.site-url}}"><img src="{{ post.image }}" /></a>
+    <a href="{{post.site-url}}"><img src="{{ post.image }}" alt="{{ post.title}} sample image" /></a>
     <h3 class="sub">{{ post.title }}</h3>
     <p class="sub">{{ post.desc }}</p>
   </div>
@@ -81,21 +81,21 @@ skills: [
   <div class="col pad">&nbsp;</div>
   <div class="col things">
     <ul>
-      {% for skill in site.skills[0] %}
+      {% for skill in page.skills[0] %}
       <li>{{ skill }}</li>
       {% endfor %}
     </ul>
   </div>
   <div class="col things">
     <ul>
-      {% for skill in site.skills[1] %}
+      {% for skill in page.skills[1] %}
       <li>{{ skill }}</li>
       {% endfor %}
     </ul>
   </div>
   <div class="col things">
     <ul>
-      {% for skill in site.skills[2] %}
+      {% for skill in page.skills[2] %}
       <li>{{ skill }}</li>
       {% endfor %}
     </ul>
@@ -106,7 +106,7 @@ skills: [
   <div class="col pad">&nbsp;</div>
   <div class="col contact">
     <h2>Contact Me</h2>
-    <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dHFCcHZvbmg2bHFMUnV6YXhidzFobXc6MQ&embedded=true&embedded=true&ifq" method="POST" id="ss-form" class="contact-form">
+    <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dHFCcHZvbmg2bHFMUnV6YXhidzFobXc6MQ&amp;embedded=true&amp;embedded=true&amp;ifq" method="POST" id="ss-form" class="contact-form">
       <div class="underlined clearfix">
         <input type="text" name="entry.0.single" value="" id="entry_0" placeholder="start typing...">
         <input type="submit" name="submit" value="Submit" />
