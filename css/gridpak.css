@@ -47,24 +47,24 @@
         	padding:0 8px;
         }
 
-        /*.title .brand { width: 32px; height: 32px;}*/
-        
-        
-        
-        /*
-        Add your semantic classnames in alongside their corresponding spans here. e.g.
-        
-        .span_3,
-        .my_semantic_class_name {
-            ...
-        }
-        */
+        .project IMG { max-width: 300px;}
 
-        .pad { display: none;}
+        .title, .social { margin-top: 10px; }
 
-        .things:nth-of-type(2) UL { margin-bottom: 0px; }
-        .things:nth-of-type(3) UL { margin-top: 0px; margin-bottom: 0px; }
-        .things:nth-of-type(4) UL { margin-top: 0px; }
+        .title-block { display: none;}
+        .title-block-full-container { display: block;}
+
+        .content-black { margin: 0 auto; text-align: left; max-width: 779px; }
+        .container-white { background-color: white; }
+        .content-white { margin: 0 auto; max-width: 779px; }
+                
+
+        .project { text-align: center;}
+        .projects.divider { display: none;}
+
+        .col.things UL { margin:0;}
+        .col.things:nth-of-type(1) UL { margin-top: 20px; }
+        .col.things:nth-of-type(3) UL { margin-bottom: 20px; }
 
         .social,
         .span_1 {
@@ -75,7 +75,6 @@
             width:66.6666666667%;
         }
         .full,
-        .full-pad,
         .project,
         .things,
         .contact,
@@ -106,46 +105,47 @@
             border-left-width:12px;
         	padding:0 12px;
         }    
+
+        .title, .social { margin-top: 20px; }
         
-        .project img { width: 100%;}
-        
-        /*
-        Add your semantic classnames in alongside their corresponding spans here. e.g.
-        
-        .span_3,
-        .my_semantic_class_name {
-            ...
-        }
-        */
-        
-        .pad,
+        .project img { width: 100%; }
+        .title-block { display: inline-block;}
+        .title-block-full-container { display: none;}
+        .smallest.col.project.divider { display: none;}
+
+        .content-black { margin: 0 auto; text-align: left; max-width: 919px; }
+        .container-white { background-color: white; }
+        .content-white { margin: 0 auto; max-width: 919px; }
+                
         .span_1 {
             width:12.5%;
         }
         .social,
-        .project,
-        .things,
         .span_2 {
             width:25.0%;
+        }
+        .things,
+        .project { 
+            width: 33.333333333%;
         }
         .span_3 {
             width:37.5%;
         }
-        .title,
         .span_4 {
             width:50.0%;
         }
         .span_5 {
             width:62.5%;
         }
-        .full-pad,
-        .contact,
+        .title,
         .span_6 {
             width:75.0%;
         }
         .span_7 {
             width:87.5%;
         }
+        .full,
+        .contact,
         .span_8 {
             margin-left:0;
             width:100%;
@@ -181,22 +181,28 @@
         }
         
         .project img { width: 100%;}
+
+        .title, .social { margin-top: 50px; }
+
+        .title-block-full-container { display: none;}
+        .smallest.col.project.divider { display: none;}
+
+        .content-black { margin: 0 auto; text-align: left; max-width: 920px;}
+        .container-white { background-color: white; }
+        .content-white { margin: 0 auto; max-width: 920px; }
         
-        .pad,
         .span_1 {
             width:8.33333333333%;
         }
         .span_2 {
             width:16.6666666667%;
         }
-        .social,
         .span_3 {
             width:25.0%;
         }
+        .project,
+        .social,
         .things,
-        .project {
-            width:27.45%;
-        }
         .span_4 {
             width:33.3333333333%;
         }
@@ -205,19 +211,17 @@
         }
         .span_6 {
             width:50.0%;
-        }
-        .title,        
+        }     
         .span_7 {
             width:58.3333333333%;
         }
+        .title,        
         .span_8 {
             width:66.6666666667%;
         }
         .span_9 {
             width:75.0%;
         }
-        .full-pad,
-        .contact,
         .span_10 {
             width:83.3333333333%;
         }
@@ -225,6 +229,7 @@
             width:91.6666666667%;
         }
         .full,
+        .contact,
         .span_12 {
             margin-left:0;
             width:100%;

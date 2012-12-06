@@ -1,20 +1,7 @@
 ---
 layout: default
 
-bio: "<p>
-I'm a <strong>London based, freelance full-stack software engineer</strong> and I love building software products and web applications for people. 
-So, what's a full-stack software engineer? Well, <a href=\"http://www.quora.com/What-does-the-term-full-stack-programmer-mean\">one answer to this question</a> on Quora describes a full-stack engineer as an \"all-singing, all-dancing technical wizard.\" 
-In reality what this actually means is that I can generally work with all of the technical pieces of the puzzle you might need to construct a software product. 
-I can help you design, build, configure, deploy and maintain your software product and/or databases. I work with great UX designers too - like the amazing <a href=\"http://jesseddy.com\">Jess Eddy</a> who designed this site.
-I firmly believe in using industry best practices such as Test Driven Development (TDD).
-</p>
-<p>
-Before going freelance, I spent fifteen years working in technology, primarily in the investment banking and finance sector. I also co-founded an enterprise software business which was a great learning experience.
-</p>
-<p>
-In my spare time, when I'm not building personal software products, I love great food, cooking as much spicy food as possible, the great outdoors, walking and <a href=\"http://instagram.com/richhollis\">photography</a>. 
-I've recently started teaching kids to code at a regular weekly <a href=\"http://codeclub.org.uk\">Code Club</a> that I run at my local junior school - this is a truly amazing and rewarding experience, teaching the kids new things and computational logic in disguise! Great fun!
-</p>"
+bio: "I'm a freelance software engineer from London, United Kingdom. I specialize in creating products for web and mobile."
 
 skills: [ 
   ['HTML / CSS', 'Javascript / jQuery', 'SASS / LESS', 'Responsive', 'Analytics / SEO'],
@@ -24,93 +11,98 @@ skills: [
 
 ---
 
-<div class="row clearfix">
-  <div class="col pad">&nbsp;</div>
-  <div class="col title">
-    <img class="brand" src="http://0.gravatar.com/avatar/b5874ab143e4ae54d964a933116417a6" alt="Picture of Rich Hollis" />
-    <div class="title-block">
-      <h1>{{ site.title }}</h1><br />
-      <h2>{{ site.description }}</h2>
+<div class="content-black clearfix">
+
+  <div class="row">
+    <div class="col title">
+      <img class="brand" src="http://0.gravatar.com/avatar/b5874ab143e4ae54d964a933116417a6" alt="Picture of Rich Hollis" />
+      <div class="title-block">
+        <h1>{{ site.title }}</h1><br />
+        <h2>{{ site.description }}</h2>
+      </div>
+    </div>
+    <div class="col social">
+      {% if site.twitter-url %}<a href="{{ site.twitter-url }}"><img src="img/Twitter.png" alt="Twitter image link"></a>{% endif %}
+      {% if site.linkedin-url %}<a href="{{ site.linkedin-url }}"><img src="img/LinkedIn.png" alt="Linked In image link"></a>{% endif %}
     </div>
   </div>
-  <div class="col social">
-    {% if site.twitter-url %}<a href="{{ site.twitter-url }}"><img src="img/Twitter.png" alt="Twitter image link"></a>{% endif %}
-    {% if site.linkedin-url %}<a href="{{ site.linkedin-url }}"><img src="img/LinkedIn.png" alt="Linked In image link"></a>{% endif %}
-  </div>
-</div>
 
-<div class="row clearfix">
-  <div class="col pad">&nbsp;</div>
-  <div class="col full-pad bio">
-    {{ page.bio }}
-    <div class="divider">&nbsp;</div>
-  </div>
-</div>
-
-<div class="row clearfix">
-  <div class="col pad">&nbsp;</div>
-  <h2 class="col full-pad inline">Personal Projects</h2>
-</div>
-
-<div class="row clearfix">
-  <div class="col pad">&nbsp;</div>
-  {% for post in site.posts limit: 3  %}
-  <div class="col project">
-    <h3><a href="{{post.site-url}}">{{ post.url-title }}</a></h3>
-    <a href="{{post.site-url}}"><img src="{{ post.image }}" alt="{{ post.title}} sample image" /></a>
-    <h3 class="sub">{{ post.title }}</h3>
-    <p class="sub">{{ post.desc }}</p>
-  </div>
-  <!-- TODO Separator for full span -->
-  {% endfor %}
-</div>
-
-<div class="row clearfix">
-  <div class="col pad">&nbsp;</div>
-  <div class="col full-pad">
-    <div class="divider">&nbsp;</div>
-  </div>
-</div>
-
-<div class="row clearfix">
-  <div class="col pad">&nbsp;</div>
-  <h2 class="col full-pad inline">Things I Do</h2>
-</div>
-
-<div class="row clearfix">
-  <div class="col pad">&nbsp;</div>
-  <div class="col things">
-    <ul>
-      {% for skill in page.skills[0] %}
-      <li>{{ skill }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div class="col things">
-    <ul>
-      {% for skill in page.skills[1] %}
-      <li>{{ skill }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div class="col things">
-    <ul>
-      {% for skill in page.skills[2] %}
-      <li>{{ skill }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
-
-<div class="row clearfix contact-row">
-  <div class="col pad">&nbsp;</div>
-  <div class="col contact">
-    <h2>Contact Me</h2>
-    <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dHFCcHZvbmg2bHFMUnV6YXhidzFobXc6MQ&amp;embedded=true&amp;embedded=true&amp;ifq" method="POST" id="ss-form" class="contact-form">
-      <div class="underlined clearfix">
-        <input type="text" name="entry.0.single" value="" id="entry_0" placeholder="start typing...">
-        <input type="submit" name="submit" value="Submit" />
+  <div class="row title-block-full-container">
+      <div class="col full title-block-full">
+        <h1>{{ site.title }}</h1><br />
+        <h2>{{ site.description }}</h2>
       </div>
-    </form>
   </div>
+
+  <div class="row">
+    <div class="col full bio">
+      {{ page.bio }}
+    </div>
+  </div>
+
+  <div class="row">
+    <h2 class="col full inline">Personal Projects</h2>
+  </div>
+
+  <div class="row">
+  {% for post in site.posts %}
+    <div class="col project">
+      <h3><a href="{{post.site-url}}">{{ post.url-title }}</a></h3>
+      <a href="{{post.site-url}}"><img src="{{ post.image }}" alt="{{ post.title}} sample image" /></a>
+      <h3 class="sub">{{ post.title }}</h3>
+      <p class="sub">{{ post.desc }}</p>
+    </div>
+    <div class="smallest col project divider">&nbsp;</div>
+    {% endfor %}
+  </div>
+
+  <div class="row">
+    <div class="col full">
+      <div class="projects divider">&nbsp;</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <h2 class="col full inline">Things I Do</h2>
+  </div>
+
+  <div class="row">
+    <div class="col things">
+      <ul>
+        {% for skill in page.skills[0] %}
+        <li>{{ skill }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col things">
+      <ul>
+        {% for skill in page.skills[1] %}
+        <li>{{ skill }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col things">
+      <ul>
+        {% for skill in page.skills[2] %}
+        <li>{{ skill }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div> <!-- content-black -->
+
+<div class="clearfix container-white">
+  <div class="content-white">
+    <div class="row contact-row">
+      <div class="col contact">
+        <h2>Contact Me</h2>
+        <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dHFCcHZvbmg2bHFMUnV6YXhidzFobXc6MQ&amp;embedded=true&amp;embedded=true&amp;ifq" method="POST" id="ss-form" class="contact-form">
+          <div class="underlined clearfix">
+            <input type="text" name="entry.0.single" value="" id="entry_0" placeholder="start typing...">
+            <input type="submit" name="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>  
 </div>
