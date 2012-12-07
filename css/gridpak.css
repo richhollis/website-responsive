@@ -47,7 +47,7 @@
         	padding:0 8px;
         }
 
-        .project IMG { max-width: 300px;}
+        .bio { font-size: 25px; }
 
         .title, .social { margin-top: 10px; }
 
@@ -55,11 +55,13 @@
         .title-block-full-container { display: block;}
 
         .content-black { margin: 0 auto; text-align: left; max-width: 779px; }
-        .container-white { background-color: white; }
         .content-white { margin: 0 auto; max-width: 779px; }
                 
 
-        .project { text-align: center;}
+        .project { text-align: center; }
+        .project IMG { max-width: 300px;}
+        .project-container { max-width: 300px; margin: 0 auto;}
+        .project .sub { font-size: 19px;}
         .projects.divider { display: none;}
 
         .col.things UL { margin:0;}
@@ -106,6 +108,8 @@
         	padding:0 12px;
         }    
 
+        .bio { font-size: 24.5px; }
+
         .title, .social { margin-top: 20px; }
         
         .project img { width: 100%; }
@@ -114,7 +118,6 @@
         .smallest.col.project.divider { display: none;}
 
         .content-black { margin: 0 auto; text-align: left; max-width: 919px; }
-        .container-white { background-color: white; }
         .content-white { margin: 0 auto; max-width: 919px; }
                 
         .span_1 {
@@ -123,7 +126,7 @@
         .social,
         .span_2 {
             width:25.0%;
-        }
+        }   
         .things,
         .project { 
             width: 33.333333333%;
@@ -179,8 +182,11 @@
             border-left-width:12px;
         	padding:0 12px;
         }
+
+        .bio { font-size: 30px; }
         
         .project img { width: 100%;}
+        .project .sub { font-size: 18px;}
 
         .title, .social { margin-top: 50px; }
 
@@ -188,7 +194,6 @@
         .smallest.col.project.divider { display: none;}
 
         .content-black { margin: 0 auto; text-align: left; max-width: 920px;}
-        .container-white { background-color: white; }
         .content-white { margin: 0 auto; max-width: 920px; }
         
         .span_1 {

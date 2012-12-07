@@ -4,6 +4,10 @@ h1, h2, h3, h4 { color: white;}
 
 a { color: #ccf2f8;}
 
+.container-white { background-color: white; }
+.container-white { height: 145px; position: fixed; left: 0; bottom: 0px; width: 100%; } 
+.push { height: 150px }
+
 .title-block { display: inline-block; }
 .title-block-full { margin-top: 10px; }
 .title-block h1 { float:left; margin: 0; padding: 0; line-height: 115%;}
@@ -14,7 +18,7 @@ a { color: #ccf2f8;}
 
 .brand { margin-right: 10px; border: 2px solid #181b1c;}
 
-.bio { margin-top: 20px; margin-bottom: 20px; font-size: 20px; line-height: 135%; font-weight: 100;}
+.bio { margin-top: 20px; margin-bottom: 20px; font-size: 30px; line-height: 135%; font-weight: 100;}
 
 .social { text-align: right; }
 
