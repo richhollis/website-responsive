@@ -33,7 +33,38 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <!--<script src="js/vendor/gridpak.js"></script>-->
+        <script src="js/vendor/jquery.imagesloaded.min.js"></script>
+
+        <script>
+          $(function(){
+            console.log($(document).height(), $(window).height());
+            $(window).resize(function() {
+              console.log("resize");
+              //alert("resize!");
+              setFooter();
+            });
+            $(".container-white").hide();
+            $("BODY").imagesLoaded(setFooter);
+          });
+
+          function setFooter() {
+            $(".container-white").show();
+            $(".container-white").removeClass("fixed"); // remove fixed as we need to work out if scroll is visible
+            
+            if ($(document).height() > $(window).height()) {
+              // has scrollbar
+              //alert("scroll");
+              //console.log("scrollbar");
+              //$(".container-white").removeClass("fixed");
+              //$(".push").addClass("active");
+            } else { 
+              //alert("no scroll");
+              //console.log("no scrollbar")
+              $(".container-white").addClass("fixed");
+              //$(".push").removeClass("active");
+            }
+          }
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

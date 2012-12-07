@@ -5,8 +5,8 @@ h1, h2, h3, h4 { color: white;}
 a { color: #ccf2f8;}
 
 .container-white { background-color: white; }
-.container-white { height: 145px; position: fixed; left: 0; bottom: 0px; width: 100%; } 
-.push { height: 150px }
+.container-white.fixed { height: 145px; position: fixed; left: 0; bottom: 0px; width: 100%; } 
+/* .push.active { height: 150px } */
 
 .title-block { display: inline-block; }
 .title-block-full { margin-top: 10px; }

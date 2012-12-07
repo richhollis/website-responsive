@@ -55,8 +55,7 @@
         .title-block-full-container { display: block;}
 
         .content-black { margin: 0 auto; text-align: left; max-width: 779px; }
-        .content-white { margin: 0 auto; max-width: 779px; }
-                
+        .content-white { margin: 0 auto; max-width: 779px; }     
 
         .project { text-align: center; }
         .project IMG { max-width: 300px;}
