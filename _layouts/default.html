@@ -39,8 +39,6 @@
           $(function(){
             console.log($(document).height(), $(window).height());
             $(window).resize(function() {
-              console.log("resize");
-              //alert("resize!");
               setFooter();
             });
             $(".container-white").hide();
@@ -51,17 +49,8 @@
             $(".container-white").show();
             $(".container-white").removeClass("fixed"); // remove fixed as we need to work out if scroll is visible
             
-            if ($(document).height() > $(window).height()) {
-              // has scrollbar
-              //alert("scroll");
-              //console.log("scrollbar");
-              //$(".container-white").removeClass("fixed");
-              //$(".push").addClass("active");
-            } else { 
-              //alert("no scroll");
-              //console.log("no scrollbar")
-              $(".container-white").addClass("fixed");
-              //$(".push").removeClass("active");
+            if ($(document).height() < $(window).height()) {
+                $(".container-white").addClass("fixed");
             }
           }
         </script>
