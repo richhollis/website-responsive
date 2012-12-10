@@ -49,7 +49,7 @@
             $(".container-white").show();
             $(".container-white").removeClass("fixed"); // remove fixed as we need to work out if scroll is visible
             
-            if ($(document).height() < $(window).height()) {
+            if (!($(document).height() > $(window).height())) {
                 $(".container-white").addClass("fixed");
             }
           }
