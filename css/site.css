@@ -8,7 +8,9 @@ a { color: #ccf2f8;}
 .container-white.fixed { height: 145px; position: fixed; left: 0; bottom: 0px; width: 100%; } 
 /* .push.active { height: 150px } */
 
-.title-block { display: inline-block; }
+h2.largest { display: none;}
+
+.title-block { float: left; }
 .title-block-full { margin-top: 10px; }
 .title-block h1 { float:left; margin: 0; padding: 0; line-height: 115%;}
 .title-block-full h1 { display: inline; line-height: 115%; }
@@ -16,7 +18,7 @@ a { color: #ccf2f8;}
 .title-block-full h2 { display: inline; font-size: 18px; font-weight: 700;}
 .title-block { margin-top: 10px; }
 
-.brand { margin-right: 10px; border: 2px solid #181b1c;}
+.brand { margin-right: 10px; border: 2px solid #181b1c; float: left;}
 
 .bio { margin-top: 20px; margin-bottom: 20px; font-size: 30px; line-height: 135%; font-weight: 100;}
 
