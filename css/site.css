@@ -2,7 +2,8 @@ body { background-image: url('../img/Background_Pattern.png')}
 h1, h2, h3, h4, div, p, input { font-family: "museo-slab"; color: #ccf2f8; }
 h1, h2, h3, h4 { color: white;}
 
-a { color: #ccf2f8;}
+a { color: #ccf2f8; text-decoration: none;}
+a:hover { color: #ccf2f8; text-decoration: underline;}
 
 .container-white { background-color: white; }
 .container-white.fixed { height: 145px; position: fixed; left: 0; bottom: 0px; width: 100%; } 
